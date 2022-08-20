@@ -6,7 +6,7 @@ const Idea = () => {
 
     const fetchData = async () => {
         const res = await axios.get("https://delete-api-gdsc-wiki.herokuapp.com/");
-        console.log(res.data);
+        // console.log(res.data);
         setIdea(res?.data);
     };
 
