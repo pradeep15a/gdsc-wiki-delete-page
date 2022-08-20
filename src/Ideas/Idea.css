@@ -1,0 +1,37 @@
+body {
+    margin : 0;
+    padding: 0;
+    background: #fefefe;
+    color : #000
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap
+}
+
+.ideas{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: #fe43ee;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+}
+
+.ideaCard{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+}
