@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import swal from 'sweetalert';
 import axios from 'axios';
 import './Idea.css'
 const Idea = () => {
@@ -12,7 +13,7 @@ const Idea = () => {
 
     const handleDelete = async (id) => {
         await axios.delete(`https://delete-api-gdsc-wiki.herokuapp.com/api/${id}`)
-        console.log("Deleted Successfully");
+        swal("Success", "Deleted Successfully", 'success');
     }
 
     useEffect(() => {
@@ -28,6 +29,7 @@ const Idea = () => {
                                 <h3>Team Name: {e?.teamName}</h3>
                                 <p><b>Des: </b>{e?.description}</p>
                                 <p><b>Id: </b>{e?._id}</p>
+                                <p><b>Created :</b></p>
                                 <button onClick={() => handleDelete(e?._id)}>Delete Idea</button>
                             </div>
                         </div>
